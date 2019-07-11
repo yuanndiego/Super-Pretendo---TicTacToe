@@ -1,0 +1,149 @@
+.hero {
+    width: 939px;
+    height: 67px;
+    background: #EDB05E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Super Plumber Brothers;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(95, 86, 86);
+    padding: 25px 0px 0px 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu {
+    /* position: absolute; */
+    width: 939px;
+    height: 149px;
+    background: #ACE9D8;
+}
+
+/* body {
+    position: absolute;
+    width: 939px;
+    height: 831px;
+    background:white;
+} */
+
+.board {
+    overflow: hidden;
+}
+
+.player1Selected {
+    background-image: url("NES.css/characterImages/mario-wb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8em;
+    opacity: 0.8 !important;
+    color: 'teal',
+}
+
+.player2Selected {
+    background-image: url("NES.css/characterImages/Yoshi-wb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8em;
+    opacity: 0.8 !important;
+    color: 'teal',
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1em;
+    float: left;
+    opacity: 0.2;
+    width: 31.5%;
+    padding-bottom: 30%;
+    border: 4px solid #C4C4C4;
+    margin: 0%;
+    height: 5em;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: #F19E8F; Fallback color */
+    background-color: #F19E8F (0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover, .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    /* display: block;  */
+    padding: 40px 0px; 
+    /* align-content: flex-end; */ 
+    width: 939px;
+    height: 90px;
+    background: #8EADA5; 
+} 
+/* ?    transition: color 0.4s linear */ 
+
+button {
+    background: #F19E8F;
+    box-shadow: 0px 4px 0px #212529, 0px -4px 0px #212529, 4px 0px 0px #212529, -4px 0px 0px #212529, inset -4px 0px 0px #8A2125, inset 0px -4px 0px #8A2125;    
+}
+
+.start:hover {
+    background-color: #F29F9B;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.refresh-board:hover {
+    background-color: #F29F9B;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.reset:hover {
+    background-color: #F29F9B;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.menu {
+    padding: 20px 0px;
+
+}
+
+.tally {
+    padding: 20px 0px;
+    border: 2px solid white
+    width: 30px;
+}
+
+.hero {
+    padding: 25px 0px 0px 20px;
+    text-shadow: #212529;
+}

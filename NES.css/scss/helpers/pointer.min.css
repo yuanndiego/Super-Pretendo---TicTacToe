@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$cursor-click-url\".\A         on line 2 of /Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/scss/helpers/pointer.scss\A \A 1: .nes-pointer {\A 2:   cursor: $cursor-click-url, pointer;\A 3: }"}

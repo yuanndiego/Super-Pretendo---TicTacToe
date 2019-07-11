@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Mario TTT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
+    <link rel='shortcut icon' type='image/x-icon' href='/Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/docs/favicon.png' />
+</head>
+<body>
+    <div class = "hero">SUPERPRETENDO</div> 
+    <div class = "container">
+        <div class = "menu">
+            <button class = "start">Let's Play</button>
+            <button class = "refresh-board">New Game</button>
+            <button class = "reset">Reset Game</button>
+            <div class = "tally">
+                <div id = "player1-lives">1P - 3 <img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""></div>
+                <div id = "player2-lives">2P - 3 <img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""></div>
+        </div>
+        <div class = "game-board">
+            <div class = "board">
+                <span class="box">0</span>
+                <span class="box">1</span>
+                <span class="box">2</span>
+                <span class="box">3</span>
+                <span class="box">4</span>
+                <span class="box">5</span>
+                <span class="box">6</span>
+                <span class="box">7</span>
+                <span class="box">8 </span>
+                <div class = "animated"</div></div>
+            </div>            
+        </div>
+        
+        <!-- <button id = "myBtn-reset">Open Modal</button> -->
+        <div id = "myModal" class = "modal">
+            <div class = "modal-content">
+                <span class = "reset-modal">&times;</span>
+                <p>Are you sure? All your hard work will be reset!</p>
+                <button class = "Yes-reset">Yes, I'm out.</button>
+            </div>
+        </div>
+        <script src="ttt.js"></script>
+        <footer> HANDMADE BY YU-ANN</footer>  
+    </div> 
+</body>
+</html>

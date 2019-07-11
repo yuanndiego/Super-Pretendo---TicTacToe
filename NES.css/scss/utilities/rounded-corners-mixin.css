@@ -1,0 +1,62 @@
+/*
+Error: Undefined variable: "$border-size".
+        on line 3 of /Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/scss/utilities/rounded-corners-mixin.scss
+
+1: %rounded-corner-defaults {
+2:   border-style: solid;
+3:   border-width: $border-size;
+4: }
+5: 
+6: @mixin border-image($color) {
+7:   border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(#{red($color)},#{green($color)},#{blue($color)})" /></svg>');
+8: }
+
+Backtrace:
+/Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/scss/utilities/rounded-corners-mixin.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$border-size\".\A         on line 3 of /Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/scss/utilities/rounded-corners-mixin.scss\A \A 1: %rounded-corner-defaults {\A 2:   border-style: solid;\A 3:   border-width: $border-size;\A 4: }\A 5: \A 6: @mixin border-image($color) {\A 7:   border-image-source: url('data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\" ?><svg version=\"1.1\" width=\"8\" height=\"8\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z\" fill=\"rgb(#{red($color)},#{green($color)},#{blue($color)})\" /></svg>');\A 8: }"; }

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+p,
+blockquote,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+ls {
+    display: block;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    font-size: inherit;
+}
+
+a,
+button {
+    color: inherit;
+    transition: color 0.4s linear;
+}
+/* linear - is the easing element - how do we transition  */
+
+
+img {
+    max-width: 100%;
+    /* it will respect the parent's width, but will not stretch beyond the size. */
+    border: 0;
+}

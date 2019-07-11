@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$font-family\".\A         on line 9 of /Users/yu-annchen/sei/code_alongs/03-project1/tictactoe/NES.css/scss/base/generic.scss\A \A 4: body,\A 5: pre,\A 6: code,\A 7: kbd,\A 8: samp {\A 9:   font-family: $font-family;\A 10: }\A 11: \A 12: html {\A 13:   cursor: $cursor-url, auto;\A 14: }"}
