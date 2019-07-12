@@ -48,12 +48,12 @@ function switchPlayers() {
 
 function markSelected(event) {
     if (event.target.classList.contains("player1Selected") || event.target.classList.contains("player2Selected")) {
-        // alert("Choose another spot, this one has been taken")
+        alert("Choose another spot, this one has been taken")
         // spotTakenAlert.style.display = "block";
         // window.onclick = function(event) {
         //     if (event.target == modal) {
         //       modal.style.display = "none";
-            
+        //     }
     } else {
         if (lastPlayer === "player1") {
             event.target.classList.add("player1Selected");
@@ -142,16 +142,16 @@ function winActions(winStateNum) {
 function tallyBoard() {
     if (winningPlayer === "player1") {
         player2LivesLeftScore = player2LivesLeftScore - 1
-        player2LivesLeft.textContent = "2P - " + player2LivesLeftScore
+        player2LivesLeft.textContent = "2P Lives - " + player2LivesLeftScore
          //need to stop players from continuing to play after game end //
          //popup and then refreshes with new board.
     } else {
         player1LivesLeftScore = player1LivesLeftScore - 1
-        player1LivesLeft.textContent = "1P - " + player1LivesLeftScore
+        player1LivesLeft.textContent = "1P Lives - " + player1LivesLeftScore
         //need to stop players from continuing to play after game end 
     }
         if (player1LivesLeftScore === 0 || player2LivesLeftScore === 0) {
-            alert("Game Over! " + winningPlayer + " is champion! Quit Game to have another go :)")
+            alert("Game Over! " + winningPlayer + " is champion! Reset Game to have another go :)")
             //need to popup to 'reset game' and then start the resetGame function.m 
         }
     // refresh or reset function depending on score?
