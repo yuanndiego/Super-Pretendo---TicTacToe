@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Super Mario TTT</title>
+    <title>Super Pretendo TTT</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
@@ -21,8 +21,8 @@
             <button class = "refresh-board">New Game</button>
             <button class = "reset">Reset Game</button>
             <div class = "tally">
-                <div id = "player1-lives">1P - 3 <img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""></div>
-                <div id = "player2-lives">2P - 3 <img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""></div>
+                <div id = "player1-lives"> <img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""> 1P - 3</div>
+                <div id = "player2-lives" ><img src="NES.css/characterImages/icon/heart/default.png" alt="" srcset=""> 2P - 3</div>
         </div>
         <div class = "game-board">
             <div class = "board">
@@ -43,8 +43,10 @@
         <div id = "myModal" class = "modal">
             <div class = "modal-content">
                 <span class = "reset-modal">&times;</span>
-                <p>Are you sure? All your hard work will be reset!</p>
-                <button class = "Yes-reset">Yes, I'm out.</button>
+                    <p>Are you sure? All your hard work will be reset!</p>
+                    <button class = "Yes-reset">Yes, I'm out.</button>
+                <!-- <span class = "box-selected">&times;</span>
+                    <p>Choose another spot, this one has been taken</p> -->
             </div>
         </div>
         <script src="ttt.js"></script>

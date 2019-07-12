@@ -9,6 +9,7 @@ var modal = document.getElementById("myModal")
 // var modalResetBtn = document.getElementById("myBtn-reset")
 var closeModel = document.getElementsByClassName("close-modal")[0]
 var confirmResetBtn = document.querySelector(".Yes-reset")
+var spotTakenAlert = document.querySelector(".box-selected")
 
 var lastPlayer = "player2";
 var winningPlayer = 0
@@ -26,6 +27,7 @@ var player1LivesLeftScore = 3
 var player2LivesLeftScore = 3 
 
 startBtn.addEventListener('click', playGame);
+// ticTacToeBoxes.addEventListener('click', playGame);
 
 function playGame() {
     switchPlayers() //return player 1 to select
@@ -46,7 +48,12 @@ function switchPlayers() {
 
 function markSelected(event) {
     if (event.target.classList.contains("player1Selected") || event.target.classList.contains("player2Selected")) {
-        alert("Choose another spot, this one has been taken")
+        // alert("Choose another spot, this one has been taken")
+        // spotTakenAlert.style.display = "block";
+        // window.onclick = function(event) {
+        //     if (event.target == modal) {
+        //       modal.style.display = "none";
+            
     } else {
         if (lastPlayer === "player1") {
             event.target.classList.add("player1Selected");
@@ -126,7 +133,7 @@ function winActions(winStateNum) {
     var winBoxTextContent = 0;
     for (var index = 0; index < winStateNum.length; index++) {
         winBoxTextContent = winStateNum[index].valueOf()
-        ticTacToeBoxes[winBoxTextContent].style.backgroundColor = 'teal'
+        ticTacToeBoxes[winBoxTextContent].style.backgroundColor = '#f4f49c'
         ticTacToeBoxes[winBoxTextContent]
     }
     tallyBoard()
@@ -135,12 +142,12 @@ function winActions(winStateNum) {
 function tallyBoard() {
     if (winningPlayer === "player1") {
         player2LivesLeftScore = player2LivesLeftScore - 1
-        player2LivesLeft.textContent = "1P Lives - " + player2LivesLeftScore + " Lives"
+        player2LivesLeft.textContent = "2P - " + player2LivesLeftScore
          //need to stop players from continuing to play after game end //
          //popup and then refreshes with new board.
     } else {
         player1LivesLeftScore = player1LivesLeftScore - 1
-        player1LivesLeft.textContent = "1P - " + player1LivesLeftScore + " Lives"
+        player1LivesLeft.textContent = "1P - " + player1LivesLeftScore
         //need to stop players from continuing to play after game end 
     }
         if (player1LivesLeftScore === 0 || player2LivesLeftScore === 0) {
@@ -161,33 +168,43 @@ function refreshBoard() {
     }
 }
 
-
-//if statement below - if user clicks on yes, let's reset
-function resetGame() {
+function popUpResetModal() {
     modal.style.display = "block";
-    if (true) {
-        lastPlayer = "player2";
-        player1Boxes = [];
-        player2Boxes = [];
-        player1LivesLeftScore = 3
-        player2LivesLeftScore = 3 
-        for (var i = 0; i < ticTacToeBoxes.length; i++) {
-            ticTacToeBoxes[i].classList.remove("player1Selected");
-            ticTacToeBoxes[i].classList.remove("player2Selected");
-            ticTacToeBoxes[i].style.backgroundColor = "white"
-            //remove tally. 
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-    }
+      }
 }
 
 newGameBtn.addEventListener('click', refreshBoard);
-resetBtn.addEventListener('click', resetGame);
+resetBtn.addEventListener('click', popUpResetModal);
+confirmResetBtn.addEventListener('click', resetGame); 
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+function resetGame() {
+    modal.onclick = function() {
+        modal.style.display = "none";
+      }
+    lastPlayer = "player2";
+    player1Boxes = [];
+    player2Boxes = [];
+    player1LivesLeftScore = 3
+    player2LivesLeftScore = 3 
+    for (var i = 0; i < ticTacToeBoxes.length; i++) {
+        ticTacToeBoxes[i].classList.remove("player1Selected");
+        ticTacToeBoxes[i].classList.remove("player2Selected");
+        ticTacToeBoxes[i].style.backgroundColor = "white"
+        player1LivesLeft.textContent = "1P - " + player1LivesLeftScore + " Lives"
+        player2LivesLeft.textContent = "2P - " + player2LivesLeftScore + " Lives"
+        //remove tally. 
     }
-  }
+}
+
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//       modal.style.display = "none";
+//     }
+//   }
 
 
 //*** */checkWinStates for an individual player. 
